@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+En este blog encontrarás mis notas principalmente acerca de mi experiencia integrando Harbour y Tpuy
+Con los sistemas Contpaqi.
+Incluso tips que te ayudarán a resolver algunos problemas comunes con los sistemas Contpaqi
