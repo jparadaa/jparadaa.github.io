@@ -1,2 +1,1 @@
-*En este blog encontrarás mis notas principalmente acerca de mi experiencia integrando Harbour y Tpuy con los sistemas Contpaqi,
-Incluso tips que te ayudarán a resolver algunos problemas comunes*
+*Este blog documenta mi trabajo con tecnologías como Harbour, UT (uHTTPd/TWeb) y sistemas Contpaqi. Encontrarás tutoriales, soluciones a problemas comunes y las lecciones aprendidas en mis proyectos de desarrollo*
