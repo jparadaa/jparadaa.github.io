@@ -2,7 +2,7 @@
 
 ## Clonación del repositorio
 
-Clonamos el repositorio de WDO:
+Clonamos el repositorio de WDO desde [GitHub](https://github.com/carles9000/ut.wdo.git):
 
 ```bash
 git clone https://github.com/carles9000/ut.wdo.git
@@ -89,7 +89,5 @@ Si todo está listo, estando en el directorio `ut.wdo` compilamos el ejemplo con
 ```
 
 Finalmente, accedemos al navegador en el puerto 81 y verificamos que todo funcione correctamente.
-
-## Conclusión
 
 Aquí comparto mi experiencia y los pasos que seguí, que me funcionaron. Espero que estas notas sean útiles para alguien más.
