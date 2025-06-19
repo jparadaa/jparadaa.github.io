@@ -1,4 +1,4 @@
-# Primeros Pasos con TDolphin en Ubuntu WSL
+# TDolphin en Ubuntu WSL
 
 Continuando con mis pruebas, ahora estoy explorando TDolphin. La razón principal por la que decidí probarlo es que con WDO no logré implementar un ejemplo en particular (al final incluiré una nota sobre cómo lo resolví con WDO; sí, finalmente lo conseguí).
 
