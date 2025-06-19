@@ -1,4 +1,4 @@
-# Primeros Pasos con WDO en Ubuntu WSL
+# WDO en Ubuntu WSL
 
 ## Clonación del repositorio
 
