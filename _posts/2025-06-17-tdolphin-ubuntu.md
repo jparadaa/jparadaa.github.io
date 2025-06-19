@@ -27,7 +27,7 @@ sudo cp libtdolphin.a /usr/local/lib/harbour/
 ```
 
 Todo esto funciona porque previamente instalé MySQL y sus dependencias. Hablé de ese tema aquí:
-[https://jparadaa.blogspot.com/2025/02/primeros-pasos-con-wdo-en-ubuntu-wsl.html](https://jparadaa.blogspot.com/2025/02/primeros-pasos-con-wdo-en-ubuntu-wsl.html)
+[https://jparadaa.github.io/2025/06/16/wdo-ubuntu.html](https://jparadaa.github.io/2025/06/16/wdo-ubuntu.html)
 
 Mi primera prueba consistió en verificar si podía conectar a MySQL con TDolphin. Para ello, utilicé el ejemplo `testcon.prg`. Primero, edité el archivo `connect.ini` para ingresar los datos de conexión a mi servidor:
 
