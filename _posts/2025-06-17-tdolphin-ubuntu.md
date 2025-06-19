@@ -3,7 +3,7 @@
 Continuando con mis pruebas, ahora estoy explorando TDolphin. La razón principal por la que decidí probarlo es que con WDO no logré implementar un ejemplo en particular (al final incluiré una nota sobre cómo lo resolví con WDO; sí, finalmente lo conseguí).
 
 Me descargué el código de la biblioteca desde:
-https://bitbucket.org/danielgarciagil/workspace/repositories/
+[https://bitbucket.org/danielgarciagil/workspace/repositories/](https://bitbucket.org/danielgarciagil/workspace/repositories/)
 
 En mi directorio home, creé una carpeta para TDolphin con el comando:
 
@@ -27,7 +27,7 @@ sudo cp libtdolphin.a /usr/local/lib/harbour/
 ```
 
 Todo esto funciona porque previamente instalé MySQL y sus dependencias. Hablé de ese tema aquí:
-https://jparadaa.blogspot.com/2025/02/primeros-pasos-con-wdo-en-ubuntu-wsl.html
+[https://jparadaa.blogspot.com/2025/02/primeros-pasos-con-wdo-en-ubuntu-wsl.html](https://jparadaa.blogspot.com/2025/02/primeros-pasos-con-wdo-en-ubuntu-wsl.html)
 
 Mi primera prueba consistió en verificar si podía conectar a MySQL con TDolphin. Para ello, utilicé el ejemplo `testcon.prg`. Primero, edité el archivo `connect.ini` para ingresar los datos de conexión a mi servidor:
 
@@ -147,7 +147,7 @@ Por lo tanto, `oServer:NextResult()` le indica a TDolphin que hemos terminado co
 
 ## Nota final sobre WDO
 
-Con WDO, precisamente recibía el error `Commands out of sync; you can't run this command now`. En este caso, WDO no tiene un método equivalente a `NextResult()`. Como solución, podemos implementar esta función en nuestro código de prueba (sin modificar la clase, por ahora).
+Con WDO, precisamente recibía el error `Commands out of sync; you can't run this command now`. En este caso, WDO no tiene un método equivalente a `NextResult()`. Como solución, podemos implementar esta función en nuestro código de prueba (sin modificar la clase, por ahora):
 
 ```harbour
 FUNCTION MySqlNextResult(pLib, hMySql)
