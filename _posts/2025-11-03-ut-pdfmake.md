@@ -46,7 +46,7 @@ Honestamente creo que funciona de lujo y es **extremadamente rápido** (< 1 segu
 
 Les comparto el proyecto completo en UT que pueden ejecutar y ver lo realmente fácil que es generar PDF en el frontend.
 
-🔗 **[Ver proyecto en GitHub](https://github.com/TU_USUARIO/ut_pdfmake)**
+🔗 **[Ver proyecto en GitHub](https://github.com/jparadaa/ut_pdfmake)**
 
 ### ¿Para quién es esta solución?
 
