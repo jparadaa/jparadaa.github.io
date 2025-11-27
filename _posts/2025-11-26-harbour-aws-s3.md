@@ -180,10 +180,3 @@ Harbour sigue siendo una herramienta poderosa para desarrollo empresarial, y con
 Si usas Harbour y necesitas almacenamiento en la nube, esta implementación te puede ahorrar días de trabajo.
 
 El código está disponible, probado, y listo para usar. Espero que le sea útil a la comunidad.
-
----
-
-**Enlaces:**
-- [Repositorio GitHub](https://github.com/jparadaa/harbour-aws-s3)
-
----
