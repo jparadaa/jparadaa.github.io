@@ -36,8 +36,13 @@ hr {
   opacity: 0.3;
 }
 
-/* Site title */
-.site-title {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
+/* --- CAMBIO AQUÍ: Site title para que parezca encabezado de post --- */
+.site-title, .site-title:visited {
+  font-size: 2.6rem !important; /* Más grande, como el título del post */
+  font-weight: 800 !important;   /* Negrita mucho más marcada */
+  letter-spacing: -1px;          /* Estilo moderno y compacto */
+  color: #111 !important;        /* Color negro sólido */
+  text-decoration: none;         /* Sin subrayados de enlace */
+  display: block;                /* Para que ocupe su propio espacio */
+  margin-bottom: 10px;           /* Espacio con lo que sigue abajo */
 }
