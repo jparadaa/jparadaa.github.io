@@ -36,13 +36,20 @@ hr {
   opacity: 0.3;
 }
 
-/* --- CAMBIO AQUÍ: Site title para que parezca encabezado de post --- */
-.site-title, .site-title:visited {
-  font-size: 2.6rem !important; /* Más grande, como el título del post */
-  font-weight: 800 !important;   /* Negrita mucho más marcada */
-  letter-spacing: -1px;          /* Estilo moderno y compacto */
-  color: #111 !important;        /* Color negro sólido */
-  text-decoration: none;         /* Sin subrayados de enlace */
-  display: block;                /* Para que ocupe su propio espacio */
-  margin-bottom: 10px;           /* Espacio con lo que sigue abajo */
+/* --- SOLUCIÓN PARA EL TÍTULO --- */
+header.site-header a.site-title, 
+header.site-header a.site-title:visited {
+  font-size: 42px !important;    /* Tamaño real de un h1 de blog */
+  font-weight: 700 !important;    /* Negrita clara */
+  letter-spacing: -1px !important;
+  line-height: 1.15 !important;
+  color: #2a2a2a !important;      /* Gris muy oscuro casi negro */
+  text-decoration: none !important;
+  display: inline-block !important;
+  padding: 20px 0 !important;     /* Le damos aire arriba y abajo */
+}
+
+/* Ajuste para que el menú de la derecha no choque si el título es largo */
+.site-nav {
+  line-height: 54px !important; 
 }
