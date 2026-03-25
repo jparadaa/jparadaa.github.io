@@ -35,21 +35,3 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
-
-/* --- SOLUCIÓN PARA EL TÍTULO --- */
-header.site-header a.site-title, 
-header.site-header a.site-title:visited {
-  font-size: 42px !important;    /* Tamaño real de un h1 de blog */
-  font-weight: 700 !important;    /* Negrita clara */
-  letter-spacing: -1px !important;
-  line-height: 1.15 !important;
-  color: #2a2a2a !important;      /* Gris muy oscuro casi negro */
-  text-decoration: none !important;
-  display: inline-block !important;
-  padding: 20px 0 !important;     /* Le damos aire arriba y abajo */
-}
-
-/* Ajuste para que el menú de la derecha no choque si el título es largo */
-.site-nav {
-  line-height: 54px !important; 
-}
