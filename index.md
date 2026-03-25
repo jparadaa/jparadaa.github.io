@@ -1,1 +1,1 @@
-*Este blog documenta mi trabajo con tecnologías como Harbour, UT (uHTTPd/TWeb) y sistemas Contpaqi. Encontrarás tutoriales, soluciones a problemas comunes y las lecciones aprendidas en mis proyectos de desarrollo*
+*Tutoriales, patrones y lecciones aprendidas integrando Harbour con UHttpd2, SQL Server, APIs REST, inteligencia artificial, agentes de IA y cloud.*
