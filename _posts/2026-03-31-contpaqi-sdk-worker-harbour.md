@@ -262,6 +262,8 @@ La solución, como se puede ver en `EjecutarSDK()`, es retener el estado: el wor
 
 El resultado medido en mis pruebas: arranque en frío entre 4 y 6 segundos para la primera operación sobre una empresa. Las operaciones subsecuentes sobre la misma empresa: milisegundos. Para las pruebas iniciales usé creación de productos por ser la operación más simple disponible; los tiempos con documentos deberían ser similares una vez implementada esa parte.
 
+![SDK CONTPAQi en acción](/img/contpaqi-sdk-worker-harbour/sdk_contpaq.gif)
+
 ---
 
 ## Agradecimientos
