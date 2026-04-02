@@ -12,7 +12,9 @@ Este tipo de implementaciones nadie las "regala" o aporta fácilmente en la comu
 
 Estuve **3 días completos** intentando hacer funcionar la integración con Harbour y fracasé repetidamente. Las firmas no coincidían, las peticiones eran rechazadas con errores crípticos, y cada intento parecía llevarme a otro callejón sin salida.
 
-La frustración llegó al punto de considerar descartar Harbour para esta parte del proyecto. Hice pruebas con **PyOLE** (Python + OLE Automation) y fueron exitosas casi de inmediato. Python tiene un SDK oficial de AWS, así que la implementación fue directa y funcionó a la primera. Parecía la ruta fácil.
+La frustración llegó al punto de considerar descartar Harbour para esta parte del proyecto. Hice pruebas con **pyOLE** (Python + OLE Automation) y fueron exitosas casi de inmediato. Python tiene un SDK oficial de AWS, así que la implementación fue directa y funcionó a la primera. Parecía la ruta fácil.
+
+> **Nota sobre [pyOle](https://github.com/diegofazio/pyOle):** pyOle es un componente de **Diego Fazio** que expone scripts de Python como servidores de automatización OLE (COM). Permite el consumo de librerías de Python desde cualquier lenguaje con soporte para clientes OLE, como Harbour. Mi agradecimiento a Diego por el desarrollo de este puente.
 
 ## Perseverancia y aprendizaje
 
