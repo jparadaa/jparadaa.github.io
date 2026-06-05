@@ -6,7 +6,7 @@ La solución funciona muy bien, pero empecé a cuestionarme algo: **levantar un
 contenedor Docker completo únicamente para renderizar una imagen se me hace excesivo**.
 
 Docker levanta su propio namespace, filesystem, red virtual y proceso supervisor. Todo eso solo
-para convertir texto SVG a PNG. Empecé a buscar alternativas y encontré **LunaSVG**: una librería
+para renderizar una imagen. Empecé a buscar alternativas y encontré **LunaSVG**: una librería
 C++ ligera, bajo licencia MIT, que renderiza SVG a PNG directamente en proceso. Sin red, sin
 contenedor, sin latencia. Exactamente lo que necesitaba.
 
