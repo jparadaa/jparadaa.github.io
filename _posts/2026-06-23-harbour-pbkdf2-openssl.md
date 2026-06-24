@@ -7,14 +7,14 @@ almacenaba como un hash SHA-256. En un sistema de uso interno parecía suficient
 Pero conforme la aplicación fue creciendo — expuesta vía Cloudflare Tunnel, con
 más usuarios, más módulos, más datos sensibles — empecé a incomodarme con esa
 implementación. El problema no es SHA-256 en sí; el problema es usarlo directamente
-como función de hashing de contraseñas sin sal y sin iteraciones. SHA-256 fue
+como función de hashing de contraseñas sin salt y sin iteraciones. SHA-256 fue
 diseñado para ser rápido. Una GPU moderna puede calcular miles de millones de
 hashes por segundo. Si alguien obtiene tu tabla de usuarios — por un backup mal
 resguardado, por acceso indebido a la BD, por cualquier razón — las contraseñas
 quedan expuestas en minutos con un simple ataque de diccionario.
 
 Lo que se necesita para almacenar contraseñas de forma correcta es una función
-deliberadamente lenta, con sal única por usuario y con un número alto de
+deliberadamente lenta, con salt única por usuario y con un número alto de
 iteraciones. Eso es exactamente **PBKDF2** (Password-Based Key Derivation Function 2).
 
 El reto: `hbssl`, el contrib oficial de OpenSSL para Harbour, no expone
@@ -28,8 +28,8 @@ Necesitamos exponer exactamente dos cosas:
 **`HB_CRYPTO_RANDBYTES( nLen )`** — Genera bytes aleatorios usando `RAND_bytes()`
 de OpenSSL, que es un CSPRNG (generador pseudoaleatorio criptográficamente seguro).
 El `hb_Random()` nativo de Harbour es un PRNG determinístico — predecible si se
-conoce la semilla, inaceptable para sal criptográfica. Cada usuario necesita una
-sal única y verdaderamente aleatoria.
+conoce la semilla, inaceptable para salt criptográfica. Cada usuario necesita una
+salt única y verdaderamente aleatoria.
 
 **`HB_CRYPTO_PBKDF2( cPass, cSalt, nIter, nKeyLen )`** — Aplica PBKDF2-HMAC-SHA256
 con el número de iteraciones que configures. Con 100,000 iteraciones, una operación
@@ -212,7 +212,7 @@ Contraseña diferente = hash diferente.
 
 ## Conclusión
 
-PBKDF2-HMAC-SHA256 con sal única por usuario es una implementación legítima
+PBKDF2-HMAC-SHA256 con salt única por usuario es una implementación legítima
 y sólida para el almacenamiento de contraseñas — la misma que usan sistemas
 de producción en todo el mundo. No es una solución de segunda categoría respecto
 a bcrypt o Argon2; la diferencia es que estos últimos incorporan parámetros
@@ -220,7 +220,7 @@ de memoria adicionales que los hacen más resistentes a hardware muy especializa
 pero PBKDF2 sigue siendo una elección correcta y ampliamente adoptada.
 
 En Harbour, donde el ecosistema de librerías criptográficas expuestas es limitado,
-este wrapper de ~80 líneas de C resuelve el problema de raíz: sal criptográfica
+este wrapper de ~80 líneas de C resuelve el problema de raíz: salt criptográfica
 real con `RAND_bytes` y hashing lento con PBKDF2.
 
 Espero que le sea útil a alguien más en la comunidad.
